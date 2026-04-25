@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekcja 01</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/styleTable.css">
+    <link rel="stylesheet" href="../styles/styleText.css">
+    <link rel="stylesheet" href="../styles/styleButton.css">
+    <link rel="stylesheet" href="../styles/styleRu.css">
+</head>
+
+<body>
+    <button class="back-to-top" id="backToTop" aria-label="Przejdź na początek strony" title="Na górę" type="button">
+        <!-- chevron up icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+        </svg>
+    </button>
+    <header>
+
+        <ul class="header">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./indexPetr.html">Polska Petr</a></li>
+        </ul>
+    </header>
+    <main class="wrapper">
+        <h1>Lekcja 01 - poziom A1</h1>
+        <div class="spis">
+            <p><a href="#01">1. ЧТЕНИЕ (5–7 минут</a>)</p>
+            <p><a href="#02">2. ПИСЬМО</a></p>
+            <p><a href="#03">3. РАЗГОВОР</a></p>
+            <p><a href="#04">4.  СВЯЗКА ДНЯ</a></p>
+            <p><a href="#05">5. МИНИ-ПРАКТИКА</a></p>
+            <p><a href="#06">6. СЛОВА</a></p>
+        </div>
+
+        <!-- 📖 1. ЧТЕНИЕ (5–7 минут) -->
+        <section class="text" id="01">
+            <h2 id="I">📖 1. ЧТЕНИЕ (5–7 минут)</h2>
+            <div class="two">
+                <p>Mam na imię Petro. <br>
+                    Pracuję w Polsce jako monter klimatyzacji.<br>
+                    Codziennie jeżdżę do klientów i montuję klimatyzatory. <br>
+                    Czasami naprawiam urządzenia albo robię serwis.<br>
+                    Rozmawiam z klientami po polsku, ale mówię jeszcze słabo.<br>
+                    Staram się uczyć nowych słów każdego dnia.<br>
+                    W pracy używam narzędzi i sprawdzam, czy wszystko działa dobrze.<br>
+                    Po pracy wracam do domu i odpoczywam. <br>
+                    Chcę lepiej mówić po polsku, ponieważ to ważne w pracy.
+                </p>
+                <div class="audio-card">
+
+                    <div class="audio-info">
+                        <span>📖 Lekcja 1</span>
+                        <span id="audioTime">⏱ ...</span>
+                    </div>
+
+                    <div class="audio-header">
+                        <p>🎧 Słuchaj</p>
+                    </div>
+
+                    <button id="playBtn">▶️ Rozpocznij</button>
+
+                    <div class="progress-container" id="progressContainer">
+                        <div class="progress" id="progress"></div>
+                        <div class="progress-thumb" id="thumb"></div>
+                    </div>
+
+                    <audio id="audioPlayer" src="./audio/lekcja01czyt.mp3"></audio>
+
+                </div>
+            </div>
+            <h3>❓ ВОПРОСЫ </h3>
+            <ol>
+                <li>Kim jest Petro?</li>
+                <li>Co robi w pracy?</li>
+                <li>Czy dobrze mówi po polsku?</li>
+                <li>Dlaczego uczy się polskiego?</li>
+            </ol>
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_1">RU</button>
+
+                <div class="modal" data-modal="ru_1">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <table class="lesson-table">
+                            <tr>
+                                <th>🇵🇱 Польский</th>
+                                <th>🇷🇺 Русский</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>1. Kim jest Petro?</b> <br>
+                                    <span>Petro jest monterem klimatyzacji.</span><br>
+                                    <span>Pracuje w Polsce.</span>
+                                </td>
+                                <td>
+                                    <b>1. Кто такой Петр?</b><br>
+                                    <span>Петр — установщик кондиционеров.</span><br>
+                                    <span>Он работает в Польше.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>2. Co robi w pracy?</b> <br>
+                                    <span>Montuje klimatyzatory.</span> <br>
+                                    <span>Czasami robi serwis i naprawy.</span>
+                                </td>
+                                <td>
+                                    <b>2. Что он делает на работе?</b> <br>
+                                    <span>Он устанавливает кондиционеры.</span> <br>
+                                    <span>Иногда делает обслуживание и ремонт.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>3. Czy dobrze mówi po polsku?</b> <br>
+                                    <span>Nie, mówi jeszcze słabo.</span> <br>
+                                    <span>Ale się uczy.</span>
+                                </td>
+                                <td>
+                                    <b>3. Хорошо ли он говорит по-польски?</b> <br>
+                                    <span>Нет, он пока говорит слабо.</span> <br>
+                                    <span>Но он учится.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>4. Dlaczego uczy się polskiego?</b> <br>
+                                    <span>Uczy się, ponieważ pracuje w Polsce.</span> <br>
+                                    <span>To ważne w pracy.</span>
+                                </td>
+                                <td>
+                                    <b>4. Почему он учит польский?</b> <br>
+                                    <span>Он учит, потому что работает в Польше.</span> <br>
+                                    <span>Это важно на работе.</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- 2. ПИСЬМО -->
+        <section class="text" id="02">
+            <h2>✍️ 2. ПИСЬМО (очень простое)</h2>
+            <p class="p22">Napisz</p>
+            <ul>
+                <li>Pracuję jako monter. </li>
+                <li>Montuję klimatyzację.</li>
+                <li>Uczę się polskiego w pracy.</li>
+            </ul>
+            
+        </section>
+        <!--  3. РАЗГОВОР  -->
+        <section class="text" id="03">
+            <h2>🗣️ 3. РАЗГОВОР (самое важное)</h2>
+            <p class="p22">👉 Отвечать 3 короткими предложениями</p>
+            <ol>
+                <li>Gdzie pracujesz?</li>
+                <li>Co robisz w pracy?</li>
+                <li>Czy mówisz po polsku?</li>
+                <li>Dlaczego uczysz się polskiego?</li>
+            </ol>
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_3">RU</button>
+
+                <div class="modal" data-modal="ru_3">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <table class="lesson-table">
+                            <tr>
+                                <th>🇵🇱 Польский</th>
+                                <th>🇷🇺 Русский</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>1. Gdzie pracujesz?</b> <br>
+                                    <span>Pracuję w Polsce.</span><br>
+                                    <span>Pracuję jako monter klimatyzacji.</span> <br>
+                                    <span>Pracuję u klientów.</span>
+                                </td>
+                                <td>
+                                    <b>1. Где ты работаешь?</b><br>
+                                    <span>Я работаю в Польше.</span><br>
+                                    <span>Я работаю установщиком кондиционеров.</span> <br>
+                                    <span>Я работаю у клиентов.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>2. Co robisz w pracy?</b> <br>
+                                    <span>Montuje klimatyzatory.</span> <br>
+                                    <span>Naprawiam urządzenia.</span> <br>
+                                    <span>Robię serwis.</span>
+                                </td>
+                                <td>
+                                    <b>2. Что он делает на работе?</b> <br>
+                                    <span>Я устанавливаю кондиционеры.</span> <br>
+                                    <span>Я ремонтирую оборудование.</span> <br>
+                                    <span>Я делаю обслуживание.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>3. Czy mówisz po polsku?</b> <br>
+                                    <span>Mówię trochę po polsku.</span> <br>
+                                    <span>Rozumiem więcej niż mówię.</span> <br>
+                                    <span>Uczę się codziennie.</span>
+                                </td>
+                                <td>
+                                    <b>3. Ты говоришь по-польски?</b> <br>
+                                    <span>Я немного говорю по-польски.</span> <br>
+                                    <span>Я понимаю больше, чем говорю.</span> <br>
+                                    <span>Я учусь каждый день.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>4. Dlaczego uczysz się polskiego?</b> <br>
+                                    <span>Uczę się, ponieważ pracuje w Polsce.</span> <br>
+                                    <span>Chcę rozmawiać z klientami.</span> <br>
+                                    <span>To ważne w pracy.</span>
+                                </td>
+                                <td>
+                                    <b>4. Почему ты учишь польский?</b> <br>
+                                    <span>Я учу, потому что работаю в Польше.</span> <br>
+                                    <span>
+                                        Я хочу разговаривать с клиентами.
+                                    </span> <br>
+                                    <span>Это важно в работе.</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4.  СВЯЗКА ДНЯ -->
+        <section class="text" id="04">
+            <h2>🔗 4. СВЯЗКА ДНЯ</h2>
+            <h5>🟢 ponieważ — потому что, </h5>
+            <h6>📌 Когда использовать ponieważ</h6>
+            <p><b>Когда ты объясняешь причину (формально или нейтрально)</b></p>
+            <p>Это почти 1:1 как «потому что», но звучит <b>чуть более книжно / аккуратно</b>.</p>
+            <ul>
+                <li>Nie przyszedłem, ponieważ byłem chory. → Я не пришёл, потому что был болен.</li>
+                <li>Zamknęli sklep, ponieważ było już późno. → Магазин закрыли, потому что было уже поздно.</li>
+            </ul>
+            <h6>💡 Важный нюанс для русскоговорящих</h6>
+            <p>В польском есть ещё более разговорный вариант:</p>
+            <p><b>➡️ bo</b> = тоже «потому что», но чаще используется в обычной речи</p>
+            <p><em>👉 Сравни:</em></p>
+            <ul>
+                <li>Nie idę, bo jestem zmęczony. → разговорно</li>
+                <li>Nie idę, ponieważ jestem zmęczony. → более формально</li>
+            </ul>
+            <h5>🇵🇱 dlatego = 🇷🇺 поэтому / из-за этого</h5>
+            <p>👉 Это<b> не «потому что»</b>, а наоборот — <b>следствие, а не причина</b>.</p>
+            <h6>📌 Как это выглядит</h6>
+            <div class="two">
+                <div>
+                    <p><b>👉 Причина:</b></p>
+                    <p>Nie poszedłem, bo byłem zmęczony. → Я не пошёл, потому что устал.</p>
+                </div>
+                <div>
+                    <p><b>👉 Следствие:</b></p>
+                    <p>Byłem zmęczony, dlatego nie poszedłem. → Я устал, поэтому не пошёл.</p>
+                </div>
+            </div>
+            <h6>💡 Быстрое сравнение</h6>
+            <ul>
+                <li><b>bo / ponieważ</b> → отвечают на вопрос: <em>почему?</em></li>
+                <li><b>dlatego</b> → отвечают на вопрос: <em> что из этого вышло?</em></em></li>
+            </ul>
+        </section>
+        <!--  5. МИНИ-ПРАКТИКА   -->
+        <section class="text" id="05">
+            <h2>💡 5. МИНИ-ПРАКТИКА </h2>
+            <p class="p22">Скажи по-польски:</p>
+            <div class="two">
+                <ol>
+                    <li>Я работаю установщиком</li>
+                    <li>Я устанавливаю кондиционеры</li>
+                    <li>Я учу польский, потому что это важно</li>
+                    <li>Я работаю в Польше</li>
+                    <li>Я работаю у клиентов</li>
+                </ol>
+                <ol start="6">
+                    <li>Я делаю обслуживание</li>
+                    <li>Я ремонтирую оборудование</li>
+                    <li>Я немного говорю по-польски</li>
+                    <li>Я понимаю больше, чем говорю</li>
+                    <li>Я учусь каждый день</li>
+                </ol>
+            </div>
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_5">RU</button>
+
+                <div class="modal" data-modal="ru_5">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="two">
+                            <ol>
+                                <li>Pracuję jako monter.</li>
+                                <li>Montuję klimatyzatory.</li>
+                                <li>Uczę się języka polskiego, ponieważ jest to ważne.</li>
+                                <li>Pracuję w Polsce.</li>
+                                <li>Pracuję u klientów.</li>
+                            </ol>
+                            <ol start="6">
+                                <li>Robię serwis.</li>
+                                <li>Naprawiam urządzenia.</li>
+                                <li>Mówię trochę po polsku.</li>
+                                <li>Rozumiem więcej niż mówię.</li>
+                                <li>Uczę się codziennie.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  6. СЛОВА  -->
+        <section class="text" id="06">
+            <h2>🔤 6. СЛОВА</h2>
+            <p class="p22">Скажи по-польски:</p>
+            <div class="two">
+                <ol>
+                    <li>
+                        <b>кондиционер</b>
+                        <ul>
+                            <li>Я устанавливаю кондиционер</li>
+                            <li>Кондиционер работает хорошо</li>
+                            <li>Это новый кондиционер</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>монтажник / установщик</b>
+                        <ul>
+                            <li>Я работаю монтажником</li>
+                            <li>Монтажник устанавливает кондиционеры</li>
+                            <li>Мой друг — хороший монтажник</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>обслуживание</b>
+                        <ul>
+                            <li>Я делаю обслуживание</li>
+                            <li>Это обслуживание кондиционера</li>
+                            <li>У меня сегодня обслуживание</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>ремонт</b>
+                        <ul>
+                            <li>Я ремонтирую оборудование</li>
+                            <li>Это быстрый ремонт</li>
+                            <li>Ремонт готов</li>
+                        </ul>
+                    </li>
+
+                </ol>
+                <ol start="5">
+                    <li>
+                        <b>работать</b>
+                        <ul>
+                            <li>Я работаю каждый день</li>
+                            <li>Я работаю в Польше</li>
+                            <li>Я много работаю</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>проверять</b>
+                        <ul>
+                            <li>Я проверяю оборудование</li>
+                            <li>Я проверяю температуру</li>
+                            <li>Я всё проверяю</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>работать (о технике)</b>
+                        <ul>
+                            <li>Устройство работает хорошо</li>
+                            <li>Климат работает тихо</li>
+                            <li>Всё работает отлично</li>
+                            <li> Не работает</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>инструменты</b>
+                        <ul>
+                            <li>У меня есть инструменты</li>
+                            <li>Я использую инструменты</li>
+                            <li>Инструменты помогают мне работать</li>
+                            <li>Это мои инструменты</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_6">RU</button>
+
+                <div class="modal" data-modal="ru_6">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="two">
+                            <ol>
+                                <li>
+                                    <b>klimatyztor</b>
+                                    <ul>
+                                        <li>Montuję klimatyzację</li>
+                                        <li>Klimatyzacja działa dobrze</li>
+                                        <li>To nowy klimatyzator</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>monter / instalator</b>
+                                    <ul>
+                                        <li>Pracuję jako monter.</li>
+                                        <li>Monter instaluje klimatyzatory.</li>
+                                        <li>Mój przyjaciel to dobry monter.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>serwis</b>
+                                    <ul>
+                                        <li>Robię serwis</li>
+                                        <li>To jest serwis klimatyzacji</li>
+                                        <li>Mam dziś serwis</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>naprawa</b>
+                                    <ul>
+                                        <li>Robię naprawę urządzeń.</li>
+                                        <li>To szybka naprawa.</li>
+                                        <li>Naprawa jest gotowa.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <ol start="5">
+                                <li>
+                                    <b>pracować</b>
+                                    <ul>
+                                        <li>Pracuję codziennie</li>
+                                        <li>Pracuję w Polsce</li>
+                                        <li>Dużo pracuję</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>sprawdzać</b>
+                                    <ul>
+                                        <li>Sprawdzam urządzenie</li>
+                                        <li>Sprawdzam temperaturę</li>
+                                        <li>Sprawdzam wszystko</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>działać</b>
+                                    <ul>
+                                        <li>Устройство działa dobrze</li>
+                                        <li>Климатyzacja działa cicho</li>
+                                        <li>Wszystko działa dobrze</li>
+                                        <li> Nie działa</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>narzędzia</b>
+                                    <ul>
+                                        <li>Mam narzędzia</li>
+                                        <li>Używam narzędzi</li>
+                                        <li>Narzędzia pomagają mi pracować</li>
+                                        <li>To moje narzędzia</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+    <script src="../js/audio.js"></script>
+    <script src="../js/button.js"></script>
+    <script src="../js/imageZum.js"></script>
+    <script src="../js/scriptRu.js"></script>
+
+</body>
+
+</html>

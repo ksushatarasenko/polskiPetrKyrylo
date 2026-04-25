@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekcja 02</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/styleTable.css">
+    <link rel="stylesheet" href="../styles/styleText.css">
+    <link rel="stylesheet" href="../styles/styleButton.css">
+    <link rel="stylesheet" href="../styles/styleRu.css">
+</head>
+
+<body>
+    <button class="back-to-top" id="backToTop" aria-label="Przejdź na początek strony" title="Na górę" type="button">
+        <!-- chevron up icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+        </svg>
+    </button>
+    <header>
+
+        <ul class="header">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./indexPetr.html">Polska Petr</a></li>
+        </ul>
+    </header>
+    <main class="wrapper">
+        <h1>Lekcja 02 - poziom A1</h1>
+        <div class="spis">
+            <p><a href="#01">1. ЧТЕНИЕ (5–7 минут</a>)</p>
+            <p><a href="#02">2. ПИСЬМО</a></p>
+            <p><a href="#03">3. РАЗГОВОР</a></p>
+            <p><a href="#04">4. СВЯЗКА ДНЯ</a></p>
+            <p><a href="#05">5. МИНИ-ПРАКТИКА</a></p>
+            <p><a href="#06">6. СЛОВА</a></p>
+        </div>
+
+        <!-- 📖 1. ЧТЕНИЕ (5–7 минут) -->
+        <section class="text" id="01">
+            <h2 id="I">📖 1. ЧТЕНИЕ (5–7 минут)</h2>
+            <div class="two">
+                <p>
+                    Dzisiaj jadę do klienta na montaż klimatyzacji. <br>
+                    Klient otwiera drzwi i witam się z nim.<br>
+                    Mówię, co będę robić i gdzie zamontuję klimatyzator.<br>
+                    Najpierw sprawdzam miejsce i przygotowuję narzędzia.<br>
+                    Potem zaczynam montaż i pracuję kilka godzin.<br>
+                    Na końcu sprawdzam, czy klimatyzacja działa dobrze.<br>
+                    Rozmawiam z klientem i tłumaczę, jak używać klimatyzacji.<br>
+                    Klient jest zadowolony, a ja kończę pracę.
+                </p>
+                <div class="audio-card">
+
+                    <div class="audio-info">
+                        <span>📖 Lekcja 2</span>
+                        <span id="audioTime">⏱ ...</span>
+                    </div>
+
+                    <div class="audio-header">
+                        <p>🎧 Słuchaj</p>
+                    </div>
+
+                    <button id="playBtn">▶️ Rozpocznij</button>
+
+                    <div class="progress-container" id="progressContainer">
+                        <div class="progress" id="progress"></div>
+                        <div class="progress-thumb" id="thumb"></div>
+                    </div>
+
+                    <audio id="audioPlayer" src="./audio/lekcja02.mp3"></audio>
+
+                </div>
+            </div>
+            <h3>❓ ВОПРОСЫ </h3>
+            <ol>
+                <li>Dokąd jedzie monter?</li>
+                <li>Co robi na początku?</li>
+                <li>Co robi w pracy?</li>
+                <li>Co robi na końcu?</li>
+            </ol>
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_1">RU</button>
+
+                <div class="modal" data-modal="ru_1">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <table class="lesson-table">
+                            <tr>
+                                <th>🇵🇱 Польский</th>
+                                <th>🇷🇺 Русский</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>1. Dokąd jedzie monter?</b> <br>
+                                    <span>Jedzie do klienta.</span><br>
+                                    <span>Ma montaż klimatyzacji.</span>
+                                </td>
+                                <td>
+                                    <b>1. Куда едет мастер?</b><br>
+                                    <span>Он едет к клиенту.</span><br>
+                                    <span>У него установка кондиционера.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>2. Co robi na początku?</b> <br>
+                                    <span>Wita się z klientem.</span> <br>
+                                    <span>Sprawdza miejsce.</span>
+                                </td>
+                                <td>
+                                    <b>2. Что он делает сначала?</b> <br>
+                                    <span>Он здоровается с клиентом.</span> <br>
+                                    <span>Проверяет место.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>3. Co robi w pracy?</b> <br>
+                                    <span>Montuje klimatyzator.</span> <br>
+                                    <span>Używa narzędzi.</span>
+                                </td>
+                                <td>
+                                    <b>3. Что он делает на работе?</b> <br>
+                                    <span>Он устанавливает кондиционер.</span> <br>
+                                    <span>Он использует инструменты.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>4. Co robi na końcu?</b> <br>
+                                    <span>Sprawdza, czy działa.</span> <br>
+                                    <span>Rozmawia z klientem.</span>
+                                </td>
+                                <td>
+                                    <b>4. Что он делает в конце?</b> <br>
+                                    <span>Проверяет, работает ли.</span> <br>
+                                    <span>Он разговаривает с клиентом.</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- 2. ПИСЬМО -->
+        <section class="text" id="02">
+            <h2>✍️ 2. ПИСЬМО (очень простое)</h2>
+            <p class="p22">Napisz</p>
+            <ul>
+                <li>Jadę do klienta. </li>
+                <li>Montuję klimatyzację.</li>
+                <li>Sprawdzam, czy działa. </li>
+            </ul>
+
+        </section>
+        <!--  3. РАЗГОВОР  -->
+        <section class="text" id="03">
+            <h2>🗣️ 3. РАЗГОВОР (самое важное)</h2>
+            <p class="p22">👉 Отвечать 3 короткими предложениями</p>
+            <ol>
+                <li>Co mówisz klientowi?</li>
+                <li>Co robisz najpierw?</li>
+                <li>Co robisz na końcu?</li>
+                <li>Co mówisz klientowi na końcu?</li>
+            </ol>
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_3">RU</button>
+
+                <div class="modal" data-modal="ru_3">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <table class="lesson-table">
+                            <tr>
+                                <th>🇵🇱 Польский</th>
+                                <th>🇷🇺 Русский</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>1. Co mówisz klientowi?</b> <br>
+                                    <span>Dzień dobry.</span><br>
+                                    <span>Jestem monterem klimatyzacji.</span> <br>
+                                    <span>Przyszedłem na montaż.</span>
+                                </td>
+                                <td>
+                                    <b>1. Что ты говоришь клиенту?</b><br>
+                                    <span>Добрый день</span><br>
+                                    <span>Я установщик кондиционеров.</span> <br>
+                                    <span>Я пришёл на установку.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>2. Co robisz najpierw?</b> <br>
+                                    <span>Najpierw sprawdzam miejsce.</span> <br>
+                                    <span>Potem przygotowuję narzędzia.</span> <br>
+                                    <span>Zaczynam pracę.</span>
+                                </td>
+                                <td>
+                                    <b>2. Что ты делаешь сначала?</b> <br>
+                                    <span>Сначала проверяю место.</span> <br>
+                                    <span>Потом готовлю инструменты.</span> <br>
+                                    <span>Начинаю работу.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>3. Co robisz na końcu?</b> <br>
+                                    <span>Sprawdzam klimatyzację.</span> <br>
+                                    <span>Czy wszystko działa.</span> <br>
+                                    <span>Kończę pracę.</span>
+                                </td>
+                                <td>
+                                    <b>3. Что ты делаешь в конце?</b> <br>
+                                    <span>Проверяю кондиционер.</span> <br>
+                                    <span>Всё ли работает.</span> <br>
+                                    <span>Заканчиваю работу.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>4. Co mówisz klientowi na końcu?</b> <br>
+                                    <span>Wszystko działa dobrze.</span> <br>
+                                    <span>Proszę sprawdzić.</span> <br>
+                                    <span>Dziękuję.</span>
+                                </td>
+                                <td>
+                                    <b>4. Что ты говоришь клиенту в конце?</b> <br>
+                                    <span>Всё работает хорошо.</span> <br>
+                                    <span>Проверьте, пожалуйста.</span> <br>
+                                    <span>Спасибо.</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4.  СВЯЗКА ДНЯ -->
+        <section class="text" id="04">
+            <h2>🔗 4. СВЯЗКА ДНЯ</h2>
+            <h5>🟢 najpierw / potem / na końcu — сначала / потом / в конце</h5>
+            <p class="p22">Powiedz po polsku:</p>
+            <ol>
+                <li>Сначала я проверяю место, потом готовлю инструменты, а потом начинаю работу.</li>
+                <li>Сначала я устанавливаю кондиционер, потом проверяю, работает ли, а потом разговариваю с клиентом.
+                </li>
+                <li>Сначала я делаю обслуживание, потом проверяю, работает ли, а потом заканчиваю работу.</li>
+            </ol>
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_4">RU</button>
+                <div class="modal" data-modal="ru_4">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <table class="lesson-table">
+                            <tr>
+                                <th>🇵🇱 Польский</th>
+                                <th>🇷🇺 Русский</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1. Сначала я проверяю место, потом готовлю инструменты, а потом начинаю работу.
+                                </td>
+                                <td>
+                                    1. Najpierw sprawdzam miejsce, potem przygotowuję narzędzia, a potem zaczynam pracę.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2. Сначала я устанавливаю кондиционер, потом проверяю, работает ли, а потом
+                                    разговариваю с клиентом.
+
+                                </td>
+                                <td>
+                                    2. Najpierw montuję klimatyzację, potem sprawdzam, czy działa, a potem rozmawiam z
+                                    klientem.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    3. Сначала я делаю обслуживание, потом проверяю, работает ли, а потом заканчиваю
+                                    работу.
+
+                                </td>
+                                <td>
+                                    3. Najpierw robię serwis, potem sprawdzam, czy działa, a potem kończę pracę.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+        </section>
+        <!--  5. МИНИ-ПРАКТИКА   -->
+        <section class="text" id="05">
+            <h2>💡 5. МИНИ-ПРАКТИКА </h2>
+            <p class="p22">Скажи по-польски:</p>
+            <ol>
+                <li>Добрый день, я установщик</li>
+                <li>Я пришёл на установку</li>
+                <li>Сначала проверяю место</li>
+                <li>Потом устанавливаю кондиционер</li>
+                <li>Всё работает хорошо</li>
+            </ol>
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_5">RU</button>
+
+                <div class="modal" data-modal="ru_5">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <ol>
+                            <li>Dzień dobry, jestem monterem</li>
+                            <li>Przyszedłem na montaż</li>
+                            <li>Najpierw sprawdzam miejsce</li>
+                            <li>Potem montuję klimatyzację</li>
+                            <li>Wszystko działa dobrze</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  6. СЛОВА  -->
+        <section class="text" id="06">
+            <h2>🔤 6. СЛОВА</h2>
+            <p class="p22">Скажи по-польски:</p>
+            <ol>
+                <li>
+                    <b>установка</b>
+                    <ul>
+                        <li>Я делаю установку</li>
+                        <li>Это установка кондиционера</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>место</b>
+                    <ul>
+                        <li>Проверяю место</li>
+                        <li>Это хорошее место</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>начать</b>
+                    <ul>
+                        <li>Я начинаю работу</li>
+                        <li>Могу начать</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>закончить</b>
+                    <ul>
+                        <li>Я заканчиваю работу</li>
+                        <li>Я уже закончил</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>объяснять</b>
+                    <ul>
+                        <li>Я объясняю клиенту</li>
+                        <li>Объясняю как работает</li>
+                        <li>Клиенту всё понятно</li>
+                </li>
+
+            </ol>
+
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_6">RU</button>
+
+                <div class="modal" data-modal="ru_6">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="two">
+                            <ol>
+                                <li>
+                                    <b>установка</b>
+                                    <ul>
+                                        <li>Я делаю установку</li>
+                                        <li>Это установка кондиционера</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>место</b>
+                                    <ul>
+                                        <li>Проверяю место</li>
+                                        <li>Это хорошее место</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>начать</b>
+                                    <ul>
+                                        <li>Я начинаю работу</li>
+                                        <li>Могу начать</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>закончить</b>
+                                    <ul>
+                                        <li>Я заканчиваю работу</li>
+                                        <li>Я уже закончил</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>объяснять</b>
+                                    <ul>
+                                        <li>Я объясняю клиенту</li>
+                                        <li>Объясняю как работает</li>
+                                        <li>Клиенту всё понятно</li>
+                                </li>
+
+                            </ol>
+                            <ol>
+                                <li>
+                                    <b>montaż</b>
+                                    <ul>
+                                        <li>Robię montaż</li>
+                                        <li>To montaż klimatyzacji</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>miejsce</b>
+                                    <ul>
+                                        <li>Sprawdzam miejsce</li>
+                                        <li>To dobre miejsce</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>zacząć</b>
+                                    <ul>
+                                        <li>Zaczynam pracę</li>
+                                        <li>Mogę zacząć</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>kończyć</b>
+                                    <ul>
+                                        <li>Kończę pracę</li>
+                                        <li>Już skończyłem</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>tłumaczyć</b>
+                                    <ul>
+                                        <li>Tłumaczę klientowi</li>
+                                        <li>Tłumaczę jak działa</li>
+                                        <li>Klientowi wszystko jest jasne</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+    <script src="../js/audio.js"></script>
+    <script src="../js/button.js"></script>
+    <script src="../js/imageZum.js"></script>
+    <script src="../js/scriptRu.js"></script>
+
+</body>
+
+</html>
