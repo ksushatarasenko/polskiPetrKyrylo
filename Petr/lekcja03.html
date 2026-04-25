@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekcja 03</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/styleTable.css">
+    <link rel="stylesheet" href="../styles/styleText.css">
+    <link rel="stylesheet" href="../styles/styleButton.css">
+    <link rel="stylesheet" href="../styles/styleRu.css">
+</head>
+
+<body>
+    <button class="back-to-top" id="backToTop" aria-label="Przejdź na początek strony" title="Na górę" type="button">
+        <!-- chevron up icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+        </svg>
+    </button>
+    <header>
+
+        <ul class="header">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./indexPetr.html">Polska Petr</a></li>
+        </ul>
+    </header>
+    <main class="wrapper">
+        <h1>Lekcja 03 - poziom A1</h1>
+        <div class="spis">
+            <p><a href="#01">1. ЧТЕНИЕ (5–7 минут</a>)</p>
+            <p><a href="#02">2. ПИСЬМО</a></p>
+            <p><a href="#03">3. РАЗГОВОР</a></p>
+            <p><a href="#04">4. СВЯЗКА ДНЯ</a></p>
+            <p><a href="#05">5. МИНИ-ПРАКТИКА</a></p>
+            <p><a href="#06">6. СЛОВА</a></p>
+        </div>
+
+        <!-- 📖 1. ЧТЕНИЕ (5–7 минут) -->
+        <section class="text" id="01">
+            <h2 id="I">📖 1. ЧТЕНИЕ (5–7 минут)</h2>
+            <div class="two">
+                <p>
+                    Pracuję w firmie, która robi serwis klimatyzacji. <br>
+                    Obsługujemy sklepy, na przykład Biedronkę i Lidl.<br>
+                    Codziennie dostaję zadania od szefa.<br>
+                    Często jeżdżę samochodem do różnych miast.<br>
+                    Czasami mam delegacje i pracuję poza miastem.<br>
+                    W pracy rozmawiam z szefem i kolegami.<br>
+                    Robimy serwis i naprawy urządzeń w sklepach.<br>
+                    Praca jest czasami trudna, ale interesująca.<br>
+                    Chcę lepiej mówić po polsku, żeby rozumieć szefa.
+                </p>
+                <div class="audio-card">
+
+                    <div class="audio-info">
+                        <span>📖 Lekcja 3</span>
+                        <span id="audioTime">⏱ ...</span>
+                    </div>
+
+                    <div class="audio-header">
+                        <p>🎧 Słuchaj</p>
+                    </div>
+
+                    <button id="playBtn">▶️ Rozpocznij</button>
+
+                    <div class="progress-container" id="progressContainer">
+                        <div class="progress" id="progress"></div>
+                        <div class="progress-thumb" id="thumb"></div>
+                    </div>
+
+                    <audio id="audioPlayer" src="./audio/lekcja03.mp3"></audio>
+
+                </div>
+            </div>
+            <!-- RU -->
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_1_1">RU</button>
+
+                <div class="modal" data-modal="ru_1_1">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <table class="lesson-table">
+                            <tr>
+                                <th>🇵🇱 Польский</th>
+                                <th>🇷🇺 Русский</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Pracuję w firmie, która robi serwis klimatyzacji.
+                                </td>
+                                <td>
+                                    Я работаю в фирме, которая обслуживает кондиционеры.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Obsługujemy sklepy, na przykład Biedronkę i Lidl.
+                                </td>
+                                <td>
+                                    Мы обслуживаем магазины, например Biedronka и Lidl.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Codziennie dostaję zadania od szefa.
+                                </td>
+                                <td>
+                                    Каждый день я получаю задания от начальника.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Często jeżdżę samochodem do różnych miast.
+                                </td>
+                                <td>
+                                    Я часто езжу на машине в разные города.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Czasami mam delegacje i pracuję poza miastem.</td>
+                                <td>Иногда у меня командировки, и я работаю за городом.</td>
+                            </tr>
+                            <tr>
+                                <td>W pracy rozmawiam z szefem i kolegami.</td>
+                                <td>На работе я разговариваю с начальником и коллегами.</td>
+                            </tr>
+                            <tr>
+                                <td>Robimy serwis i naprawy urządzeń w sklepach.</td>
+                                <td>Мы делаем обслуживание и ремонт оборудования в магазинах.</td>
+                            </tr>
+                            <tr>
+                                <td>Praca jest czasami trudna, ale interesująca.</td>
+                                <td>Работа иногда сложная, но интересная.</td>
+                            </tr>
+                            <tr>
+                                <td>Chcę lepiej mówić po polsku, żeby rozumieć szefa.</td>
+                                <td>Я хочу лучше говорить по-польски, чтобы понимать начальника.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- end RU -->
+            <h3>❓ ВОПРОСЫ </h3>
+            <ol>
+                <li>Gdzie pracujesz?</li>
+                <li>Gdzie pracujesz na co dzień?</li>
+                <li>Co robisz w pracy?</li>
+                <li>Czy jeździsz do pracy?</li>
+            </ol>
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_1">RU</button>
+
+                <div class="modal" data-modal="ru_1">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <table class="lesson-table">
+                            <tr>
+                                <th>🇵🇱 Польский</th>
+                                <th>🇷🇺 Русский</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>1. Gdzie pracujesz?</b> <br>
+                                    <span>Pracuję w firmie.</span><br>
+                                    <span>Robimy serwis klimatyzacji.</span>
+                                </td>
+                                <td>
+                                    <b>1. Где ты работаешь?</b><br>
+                                    <span>Я работаю в фирме.</span><br>
+                                    <span>Мы обслуживаем кондиционеры.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>2. Gdzie pracujesz na co dzień?</b> <br>
+                                    <span>Pracuję w sklepach.</span> <br>
+                                    <span>Na przykład w Biedronce i Lidlu.</span>
+                                </td>
+                                <td>
+                                    <b>2. Где ты работаешь каждый день?</b> <br>
+                                    <span>Я работаю в магазинах.</span> <br>
+                                    <span>Например, в Biedronce и Lidl.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>3. Co robisz w pracy?</b> <br>
+                                    <span>Robię serwis i naprawy.</span> <br>
+                                    <span>Sprawdzam urządzenia.</span>
+                                </td>
+                                <td>
+                                    <b>3. Что ты делаешь на работе?</b> <br>
+                                    <span>Я делаю обслуживание и ремонт.</span> <br>
+                                    <span>Проверяю оборудование.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>4. Czy jeździsz do pracy?</b> <br>
+                                    <span>Tak, jeżdżę samochodem.</span> <br>
+                                    <span>Często jeżdżę do innych miast.</span>
+                                </td>
+                                <td>
+                                    <b>4. Ты ездишь на работу?</b> <br>
+                                    <span>Да, я езжу на машине.</span> <br>
+                                    <span>Часто езжу в другие города.</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- 2. ПИСЬМО -->
+        <section class="text" id="02">
+            <h2>✍️ 2. ПИСЬМО (очень простое)</h2>
+            <p class="p22">Napisz</p>
+            <ul>
+                <li>Pracuję w firmie. </li>
+                <li>Jeżdżę samochodem do pracy. </li>
+                <li>Robię serwis w sklepach.</li>
+            </ul>
+        </section>
+        <!--  3. РАЗГОВОР  -->
+        <section class="text" id="03">
+            <h2>🗣️ 3. РАЗГОВОР (самое важное)</h2>
+            <p class="p22">👉 Отвечать короткими предложениями</p>
+            <ol>
+                <li>Z kim pracujesz?</li>
+                <li>Co mówi szef?</li>
+                <li>Czy masz delegacje?</li>
+                <li>Czy praca jest trudna?</li>
+            </ol>
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_3">RU</button>
+
+                <div class="modal" data-modal="ru_3">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <table class="lesson-table">
+                            <tr>
+                                <th>🇵🇱 Польский</th>
+                                <th>🇷🇺 Русский</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>1. Z kim pracujesz?</b> <br>
+                                    <span>Pracuję z szefem.</span><br>
+                                    <span>Pracuję z kolegami.</span> <br>
+                                    <span>Rozmawiam z nimi w pracy.</span>
+                                </td>
+                                <td>
+                                    <b>1. С кем ты работаешь??</b><br>
+                                    <span>Я работаю с начальником</span><br>
+                                    <span>Я работаю с коллегами.</span> <br>
+                                    <span>Я разговариваю с ними на работе.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>2. Co mówi szef?</b> <br>
+                                    <span>Szef daje zadania.</span> <br>
+                                    <span>Mówi, co mam robić.</span> <br>
+                                    <span>Słucham szefa.</span>
+                                </td>
+                                <td>
+                                    <b>2. Что говорит начальник?</b> <br>
+                                    <span>Начальник даёт задания.</span> <br>
+                                    <span>Говорит, что мне делать.</span> <br>
+                                    <span>Я слушаю начальника.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>3. Czy masz delegacje?</b> <br>
+                                    <span>Tak, mam delegacje.</span> <br>
+                                    <span>Pracuję w innych miastach.</span> <br>
+                                    <span>Czasami śpię w hotelu.</span>
+                                </td>
+                                <td>
+                                    <b>3. У тебя есть командировки?</b> <br>
+                                    <span>Да, у меня есть командировки.</span> <br>
+                                    <span>Я работаю в других городах.</span> <br>
+                                    <span>Иногда я сплю в отеле.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>4. Czy praca jest trudna?</b> <br>
+                                    <span>Czasami jest trudna.</span> <br>
+                                    <span>Ale jest ciekawa.</span> <br>
+                                    <span>Lubię tę pracę.</span>
+                                </td>
+                                <td>
+                                    <b>4. Работа сложная?</b> <br>
+                                    <span>Иногда она сложная.</span> <br>
+                                    <span>Но она интересная.</span> <br>
+                                    <span>Мне нравится эта работа.</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4.  СВЯЗКА ДНЯ -->
+        <section class="text" id="04">
+            <h2>🔗 4. СВЯЗКА ДНЯ</h2>
+            <h5>🟢 żeby — чтобы</h5>
+            <p>Используется, когда говорим о цели, намерении или желаемом результате</p>
+            <p class="p22">Скажи по-польски:</p>
+            <ol>
+                <li>Я учу польский, чтобы понимать начальника</li>
+                <li>Я пришёл, чтобы тебе помочь.</li>
+                <li>Я работаю, чтобы зарабатывать</li>
+                <li>Я еду, чтобы сделать обслуживание</li>
+                <li>Я учусь, чтобы сдать экзамен.</li>
+                <li>Я хочу, чтобы ты пришёл.</li>
+                <li>Хорошо бы сделать это сейчас.</li>
+            </ol>
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_4">RU</button>
+                <div class="modal" data-modal="ru_4">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <table class="lesson-table">
+                            <tr>
+                                <th>🇵🇱 Польский</th>
+                                <th>🇷🇺 Русский</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1. Я учу польский, чтобы понимать начальника
+                                </td>
+                                <td>
+                                    1. Uczę się polskiego, żeby rozumieć szefa
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2. Я пришёл, чтобы тебе помочь.
+                                </td>
+                                <td>
+                                    2. Przyszedłem, żeby ci pomóc.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    3. Я работаю, чтобы зарабатывать
+                                </td>
+                                <td>
+                                    3. Uczę się polskiego, żeby rozumieć szefa
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4. Я еду, чтобы сделать обслуживание</td>
+                                <td>4. Jadę, żeby zrobić serwis</td>
+                            </tr>
+                            <tr>
+                                <td>5. Я учусь, чтобы сдать экзамен.</td>
+                                <td>5. Uczę się, żeby zdać egzamin.</td>
+                            </tr>
+                            <tr>
+                                <td>6. Я хочу, чтобы ты пришёл.</td>
+                                <td>6. Chcę, żebyś przyszedł.</td>
+                            </tr>
+                            <tr>
+                                <td>7. Хорошо бы сделать это сейчас.</td>
+                                <td>7. Dobrze byłoby to zrobić teraz.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <h6>⚠️ Важный момент (очень польский 😄)</h6>
+            <p><b>После <em>żeby</em> часто меняется форма глагола:</b></p>
+            <p><b>👉 появляются такие формы:</b></p>
+            <ul>
+                <li><b>żebym</b> (чтобы я)</li>
+                <li><b>żebyś</b> (чтобы ты)</li>
+                <li><b>żebie</b> (чтобы он/она)</li>
+                <li><b>żebyśmy</b> (чтобы мы)</li>
+                <li><b>żebyście</b> (чтобы вы)</li>
+            </ul>
+            <p><b>📌 Примеры:</b></p>
+            <ul>
+                <li>Chcę, <b>żebyś</b> to zrobił. → <b>чтобы ты</b> сделал</li>
+                <li>Lepiej, <b>żebyśmy</b> wyszli. → <b></b>чтобы мы</b> вышли</li>
+            </ul>
+        </section>
+        <!--  5. МИНИ-ПРАКТИКА   -->
+        <section class="text" id="05">
+            <h2>💡 5. МИНИ-ПРАКТИКА </h2>
+            <p class="p22">Скажи по-польски:</p>
+            <ol>
+                <li>Я работаю в фирме</li>
+                <li>Я езжу на машине</li>
+                <li>Начальник даёт задания</li>
+                <li>Я еду в другой город</li>
+                <li>У меня есть командировка</li>
+            </ol>
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_5">RU</button>
+
+                <div class="modal" data-modal="ru_5">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <ol>
+                            <li>Pracuję w firmie</li>
+                            <li>Jadę samochodem</li>
+                            <li>Szef daje zadania</li>
+                            <li>Jadę do innego miasta</li>
+                            <li>Mam delegację</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  6. СЛОВА  -->
+        <section class="text" id="06">
+            <h2>🔤 6. СЛОВА</h2>
+            <p class="p22">Скажи по-польски:</p>
+            <ol>
+                <li>
+                    <b>фирма</b>
+                    <ul>
+                        <li>Я работаю в фирме</li>
+                        <li>Это фирма по установке кондиционеров</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>начальник</b>
+                    <ul>
+                        <li>Я говорю с начальником</li>
+                        <li>Начальник даёт задания</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>задание</b>
+                    <ul>
+                        <li>У меня есть задание</li>
+                        <li>Я выполняю задание</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>ездить</b>
+                    <ul>
+                        <li>Я езжу на машине</li>
+                        <li>Я езжу на работу</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>город</b>
+                    <ul>
+                        <li>Я еду в город</li>
+                        <li>Другой город</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>командировка</b>
+                    <ul>
+                        <li>У меня есть командировка</li>
+                        <li>Я еду в командировку</li>
+                    </ul>
+                </li>
+
+            </ol>
+
+            <div>
+                <button class="ru-btn modal-trigger" data-modal="ru_6">RU</button>
+
+                <div class="modal" data-modal="ru_6">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="two">
+                            <ol>
+                                <li>
+                                    <b>фирма</b>
+                                    <ul>
+                                        <li>Я работаю в фирме</li>
+                                        <li>Это фирма по установке кондиционеров</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>начальник</b>
+                                    <ul>
+                                        <li>Я говорю с начальником</li>
+                                        <li>Начальник даёт задания</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>задание</b>
+                                    <ul>
+                                        <li>У меня есть задание</li>
+                                        <li>Я выполняю задание</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>ездить</b>
+                                    <ul>
+                                        <li>Я езжу на машине</li>
+                                        <li>Я езжу на работу</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>город</b>
+                                    <ul>
+                                        <li>Я еду в город</li>
+                                        <li>Другой город</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>командировка</b>
+                                    <ul>
+                                        <li>У меня есть командировка</li>
+                                        <li>Я еду в командировку</li>
+                                    </ul>
+                                </li>
+
+                            </ol>
+                            <ol>
+                                <li>
+                                    <b>firma</b>
+                                    <ul>
+                                        <li>Pracuję w firmie</li>
+                                        <li>To firma po instalacji klimatyzacji</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>szef</b>
+                                    <ul>
+                                        <li>Rozmawiam z szefem</li>
+                                        <li>Szef daje zadania</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>zadanie</b>
+                                    <ul>
+                                        <li>Mam zadanie</li>
+                                        <li>Robię zadanie</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>jeździć</b>
+                                    <ul>
+                                        <li>Jeżdżę samochodem</li>
+                                        <li>Jeżdżę do pracy</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>miasto</b>
+                                    <ul>
+                                        <li>Jadę do miasta</li>
+                                        <li>Inne miasto</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>delegacja</b>
+                                    <ul>
+                                        <li>U mnie jest delegacja</li>
+                                        <li>Jeżdżę w delegację</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+    <script src="../js/audio.js"></script>
+    <script src="../js/button.js"></script>
+    <script src="../js/imageZum.js"></script>
+    <script src="../js/scriptRu.js"></script>
+
+</body>
+
+</html>
